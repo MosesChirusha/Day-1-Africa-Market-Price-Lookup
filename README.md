@@ -8,7 +8,7 @@ They are often exploited by middlemen or guess the prices.
 ## Solution
 A simple web tool that allows farmers to **check daily market prices** of common crops.
 
-**Live Demo:** *[Check it here]* (https://moseschirusha.github.io/Day-1-Africa-Market-Price-Lookup/) 
+**Live Demo:** [Check it here](https://moseschirusha.github.io/Day-1-Africa-Market-Price-Lookup) 
 **GitHub Repo:** *https://github.com/MosesChirusha/Day-1-Africa-Market-Price-Lookup.git*
 
 ---
