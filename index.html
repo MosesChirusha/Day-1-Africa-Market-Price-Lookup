@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Price Lookup - DRCongo</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Market Look Up</h1>
+        <h2>Democratic Republic of the Congo</h2>
+
+        <p>Select a product to see current market price</p>
+
+        <select id="productSelect">
+            <option value="">-- Choose a product --</option>
+        </select>
+
+        <button onclick="getPrice()">Check Price</button>
+
+        <div id="result"></div>
+
+
+        <script>
+            let priceData = {};
+
+            fetch("market_price.json")
+            .then(response => response.json())
+            .then(data =>{
+                priceData = data;
+                
+                let select = document.getElementById("productSelect");
+
+                for(let product in data){
+                    let option = document.createElement("option");
+                    option.value = product;
+                    option.textContent = product;
+                    select.appendChild(option);
+                }
+            });
+
+            function getPrice(){
+                let product = document.getElementById("productSelect").value;
+                let result = document.getElementById("result");
+
+                if(product === ""){
+                    result.innerHTML = "Please select a product";
+                    return;
+                }
+
+                result.innerHTML = `The current price of <b>${product}</b> is <b> ${priceData[product]} CDF </b>`;
+            }
+
+
+        </script>
+    </body>
+
+</html>
