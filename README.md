@@ -10,6 +10,8 @@ A simple web tool that allows farmers to **check daily market prices** of common
 
 **Live Demo:** [Check it here](https://moseschirusha.github.io/Day-1-Africa-Market-Price-Lookup) 
 **GitHub Repo:** *https://github.com/MosesChirusha/Day-1-Africa-Market-Price-Lookup.git*
+**Medium Article:** *[Day 1/90 ](https://moseschirusha.medium.com/day-1-90-im-building-tech-solutions-for-africa-with-code-starting-with-farmers-market-prices-ad10e3c4e60e)
+**Youtube Video:** [Video 1/90](https://www.youtube.com/watch?v=jLfzFmkIQLg)
 
 ---
 
